@@ -1,0 +1,203 @@
+/* General Navbar Styling */
+.navbar {
+    background-color: #fdfbfb;
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 25px;
+    position: relative;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: 0;
+}
+
+.navItem {
+    color: rgb(7, 7, 7);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.navItem:hover {
+    background-color: #f8f4f4;
+    color: palevioletred;
+}
+
+/* Hover dropdown styling */
+.navItem:hover .dropdown {
+    display: flex; /* Show the dropdown when hovering */
+}
+
+/* Dropdown Container */
+.dropdown {
+    background-color: #f9f7f7;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    right: 0;
+    /* transform: translateX(-10%); */
+    padding: 15px;
+    z-index: 100;
+    width: 90%;
+    display: none; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.dropdownRow {
+    width: 50%;
+    flex-basis: 20%;
+    margin-bottom: 15px;
+}
+.dropdowns {
+    background-color: #f8f4f4;
+    position: absolute;
+    top: 57px; /* Position the dropdown just below the button */
+    left: 30%; /* Position the dropdown centered horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    padding: 10px;
+    width: 180px; /* Small dropdown width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: none; /* Hidden by default */
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  /* Show the dropdown when hovering over the parent navItem */
+  .navItem:hover .dropdowns {
+    display: block; /* Show dropdown on hover */
+  }
+  .dropdownss {
+    background-color: #f9f7f7;
+    position: absolute;
+    top: 57px; /* Position the dropdown just below the button */
+    left: 45%; /* Position the dropdown centered horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    padding: 10px;
+    width: 180px; /* Small dropdown width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: none; /* Hidden by default */
+    max-height: 210px;
+    overflow-y: auto;
+  }
+  
+  /* Show the dropdown when hovering over the parent navItem */
+  .navItem:hover .dropdownss {
+    display: block; /* Show dropdown on hover */
+  }
+  .dropdowns1 {
+    background-color: #fdfbfb;
+    position: absolute;
+    top: 57px; /* Position the dropdown just below the button */
+    left: 60%; /* Position the dropdown centered horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    padding: 10px;
+    width: 180px; /* Small dropdown width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: none; /* Hidden by default */
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  /* Show the dropdown when hovering over the parent navItem */
+  .navItem:hover .dropdowns1 {
+    display: block; /* Show dropdown on hover */
+  }
+  .dropdowns2 {
+    background-color: #444;
+    position: absolute;
+    top:57px; /* Position the dropdown just below the button */
+    left: 73%; /* Position the dropdown centered horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    padding: 10px;
+    width: 180px; /* Small dropdown width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: none; /* Hidden by default */
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  
+  /* Show the dropdown when hovering over the parent navItem */
+  .navItem:hover .dropdowns2 {
+    display: block; /* Show dropdown on hover */
+  }
+        
+/* SubDropdown (Nested Dropdown) */
+.subDropdown {
+    background-color: #f5f4f4;
+    padding: 10px;
+    position: absolute;
+    left: 00px;
+    top: 0;
+    width: 50%;
+    display: none; /* Hide by default */
+}
+
+/* Display sub-dropdown when hovering over a row */
+.dropdownRow:hover .subDropdown {
+    display: block; /* Show the sub-dropdown when hovering over a row */
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown li {
+    color: rgb(12, 12, 12);
+    padding: 5px 0;
+}
+
+.dropdown li:hover {
+    background-color: #f7f3f3;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navList {
+      display: none;
+      flex-direction: column;
+      background-color: #ede8e8;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .navListOpen {
+      display: flex;
+    }
+  
+    .navItem {
+      padding: 10px 20px;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .dropdown {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f6f3f3;
+    }
+  
+    .dropdownRow {
+      width: 100%;
+    }
+  }
